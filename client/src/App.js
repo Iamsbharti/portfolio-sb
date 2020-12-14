@@ -1,9 +1,12 @@
 import "./App.css";
-
+import { Route, Switch } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
 function App() {
   return (
-    <div className="App">
-      <h1>Portfolio page</h1>
+    <div>
+      <Switch>
+        <Route path="/" exact component={Dashboard} />
+      </Switch>
     </div>
   );
 }
