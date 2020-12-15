@@ -1,9 +1,4 @@
-.main {
-  background-image: url("../../public/pexels-gabriel-peter-696644.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
+body {
+  background-image: url("../assets/pexels-gabriel-peter-696644.jpg");
   background-size: cover;
-  font-size: large;
 }
