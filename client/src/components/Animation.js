@@ -102,7 +102,7 @@ export const navIntro = (ele) => {
       yPercent: 0,
       stagger: 0.54,
       ease: "back",
-      duration: 1,
+      duration: 2,
     }
   );
 };

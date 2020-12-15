@@ -5,3 +5,8 @@ body {
 .main {
   padding: 20px;
 }
+.sidebar {
+  width: 60px;
+  height: 70vh;
+  border: 1px solid red;
+}
