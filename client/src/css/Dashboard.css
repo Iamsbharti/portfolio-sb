@@ -2,3 +2,6 @@ body {
   background-image: url("../assets/pexels-gabriel-peter-696644.jpg");
   background-size: cover;
 }
+.main {
+  padding: 20px;
+}
