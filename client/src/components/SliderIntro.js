@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { sliderIntro, sliderDivIntro, hideIntroDiv } from "./Animation";
 import "../css/Slider.css";
 export const SliderIntro = () => {
