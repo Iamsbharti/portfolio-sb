@@ -50,6 +50,7 @@ const NavBar = () => {
               navIconMob = el;
             }}
           />
+
           <span className="menu_icon">
             <i
               className="fa fa-bars"

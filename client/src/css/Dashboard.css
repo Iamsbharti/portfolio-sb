@@ -9,3 +9,9 @@ body {
   width: 60px;
   height: 70vh;
 }
+@media (max-width: 800px) {
+  body {
+    background-image: url("../assets/pexels-octoptimist-4904342.jpg");
+    background-size: cover;
+  }
+}
