@@ -1,8 +1,8 @@
 .header_icon {
   color: white;
   /*opacity: 0;*/
-  height: 50px;
-  width: 50px;
+  height: 64px;
+  width: 63px;
 }
 .mobile_div,
 .mobile_menu_bar {
@@ -78,8 +78,8 @@ nav {
   }
   .mobile_menu_bar img {
     display: inline-block;
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
   }
   .header_icon {
     margin-top: 10px;

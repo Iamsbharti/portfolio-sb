@@ -1,0 +1,18 @@
+.sidebar__main {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 2px 29px 10px;
+}
+p {
+  padding: 0px 14px 19px 0px;
+}
+img {
+  width: 45px;
+  height: 45px;
+}
+/***mobile design**/
+@media (max-width: 800px) {
+  .sidebar__main {
+    padding: 20px;
+  }
+}
