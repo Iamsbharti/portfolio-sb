@@ -103,6 +103,7 @@ export const navIntro = (ele) => {
       stagger: 0.54,
       ease: "back",
       duration: 2,
+      delay: 2.4,
     }
   );
 };
