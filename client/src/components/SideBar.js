@@ -4,21 +4,31 @@ export const SideBar = () => {
   return (
     <div className="sidebar__main">
       <p>
-        <img src={process.env.PUBLIC_URL + "/shuttle.png"} alt="" />
+        <img
+          src={process.env.PUBLIC_URL + "/shuttle.png"}
+          alt=""
+          title="projects"
+        />
       </p>
       <p>
-        <img src={process.env.PUBLIC_URL + "/icons8-blogger-256.png"} alt="" />
+        <img
+          src={process.env.PUBLIC_URL + "/icons8-blogger-256.png"}
+          alt=""
+          title="blogs"
+        />
       </p>
       <p>
         <img
           src={process.env.PUBLIC_URL + "/icons8-certificate-64.png"}
           alt=""
+          title="certifications"
         />
       </p>
       <p>
         <img
           src={process.env.PUBLIC_URL + "/icons8-stack-correctly-96.png"}
           alt=""
+          title="contact me"
         />
       </p>
       <p>

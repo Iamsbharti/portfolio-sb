@@ -5,6 +5,7 @@
 }
 p {
   padding: 0px 14px 19px 0px;
+  cursor: pointer;
 }
 img {
   width: 45px;
