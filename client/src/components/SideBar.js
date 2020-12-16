@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../css/SideBar.css";
+import { sideBarIntro } from "./Animation";
+
 export const SideBar = () => {
+  let sideBarEle = useRef(null);
+  useEffect(() => {
+    sideBarIntro(sideBarEle);
+  });
+
   return (
-    <div className="sidebar__main">
+    <div
+      className="sidebar__main"
+      ref={(el) => {
+        sideBarEle = el;
+      }}
+    >
       <p>
         <img
           src={process.env.PUBLIC_URL + "/shuttle.png"}

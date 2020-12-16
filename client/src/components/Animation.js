@@ -107,6 +107,26 @@ export const navIntro = (ele) => {
     }
   );
 };
+//side bar
+export const sideBarIntro = (ele) => {
+  gsap.fromTo(
+    ele,
+    {
+      opacity: 0,
+      xPercent: 40,
+      yPercent: -20,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      yPercent: 0,
+      stagger: 0.54,
+      ease: "back",
+      duration: 2,
+      delay: 2.4,
+    }
+  );
+};
 //Name header
 export const nameIntro = (elem) => {
   gsap.from(elem, {
