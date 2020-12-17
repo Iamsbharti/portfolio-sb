@@ -36,4 +36,8 @@
   color: white;
 }
 @media (max-width: 800px) {
+  .project__job__profile__card {
+    height: 120px;
+    width: 184px;
+  }
 }
