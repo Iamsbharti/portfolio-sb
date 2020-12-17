@@ -12,13 +12,13 @@ body {
 .introduction {
   display: flex;
   position: absolute;
-  top: 114px;
-  left: 137px;
+  top: 189px;
+  left: 95px;
   width: 100vh;
   height: 65vh;
 }
 .profile {
-  margin: 16px 0px 0px 103px;
+  margin: -122px 0px 0px 81px;
   padding: 30px;
 }
 @media (max-width: 800px) {
@@ -31,7 +31,11 @@ body {
     position: absolute;
     width: max-content;
     height: max-content;
-    top: 82px;
+    top: -14px;
     left: 97px;
+  }
+  .profile {
+    margin: -326px 0px 0px 81px;
+    padding: 30px;
   }
 }

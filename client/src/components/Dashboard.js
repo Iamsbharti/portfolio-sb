@@ -43,9 +43,7 @@ const Dashboard = () => {
       <div className="introduction">
         <Introduction />
       </div>
-      <div className="introduction">
-        <Introduction />
-      </div>
+
       <div className="profile">
         <JobProfile />
       </div>

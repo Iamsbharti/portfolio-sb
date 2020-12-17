@@ -1,0 +1,39 @@
+.project__job__profile {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.project__job__profile__card {
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+  margin: 10px;
+  padding: 30px;
+  position: relative;
+  height: 199px;
+  width: 200px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  margin-top: 10px;
+  margin-right: 56px;
+}
+.color__sec {
+  color: yellow;
+}
+.color__ml {
+  color: sandybrown;
+}
+.color__fs {
+  color: #c2c2c2;
+}
+.job__profile__icons {
+  font-size: 14px;
+  color: white;
+}
+@media (max-width: 800px) {
+}

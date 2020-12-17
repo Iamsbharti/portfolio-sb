@@ -60,17 +60,22 @@
 @media (max-width: 800px) {
   .intro_job_title {
     color: rgb(252, 220, 188) !important;
+    font-weight: 900;
   }
   .intro_job_details {
-    color: aliceblue !important;
+    color: black !important;
+    font-weight: 900;
   }
   .responsive_name {
     margin-top: -7px;
+    color: rgb(252, 220, 188) !important;
   }
   .name__intro__card {
     width: 287px;
   }
   .header_introduction {
     margin-left: -16px;
+    margin-top: 125px;
+    font-size: 3.4rem;
   }
 }

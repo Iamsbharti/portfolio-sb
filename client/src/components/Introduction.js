@@ -28,7 +28,7 @@ export const Introduction = () => {
   }, []);
   return (
     <>
-      <div className="name__intro__card">
+      <div>
         <div className="header_introduction">
           <div
             className="intro_name"
