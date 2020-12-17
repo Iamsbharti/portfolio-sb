@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 import { SideBar } from "./SideBar";
 import { SliderIntro } from "./SliderIntro";
 import { Introduction } from "./Introduction";
-
+import { JobProfile } from "./JobProfile";
 const Dashboard = () => {
   /**handle login for  admin*/
   let history = useHistory();
@@ -46,18 +46,8 @@ const Dashboard = () => {
       <div className="introduction">
         <Introduction />
       </div>
-      <div className="projects">
-        <div>
-          <p>dasjhdjkashdjkahsjkdhjkas</p>
-          <p>dasjhdjkashdjkahsjkdhjkas</p>
-          <p>dasjhdjkashdjkahsjkdhjkas</p>
-          <p>dasjhdjkashdjkahsjkdhjkas</p>
-          <p>dasjhdjkashdjkahsjkdhjkas</p>
-          <p>dasjhdjkashdjkahsjkdhjkas</p>
-          <p>dasjhdjkashdjkahsjkdhjkas</p>
-          <p>dasjhdjkashdjkahsjkdhjkas</p>
-          <p>dasjhdjkashdjkahsjkdhjkas</p>
-        </div>
+      <div className="profile">
+        <JobProfile />
       </div>
       <SliderIntro />
     </>

@@ -17,6 +17,10 @@ body {
   width: 100vh;
   height: 65vh;
 }
+.profile {
+  margin: 16px 0px 0px 103px;
+  padding: 30px;
+}
 @media (max-width: 800px) {
   body {
     background-image: url("../assets/pexels-octoptimist-4904342.jpg");
