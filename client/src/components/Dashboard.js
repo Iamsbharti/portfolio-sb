@@ -4,6 +4,8 @@ import { useHistory } from "react-router-dom";
 import NavBar from "./NavBar";
 import { SideBar } from "./SideBar";
 import { SliderIntro } from "./SliderIntro";
+import { Introduction } from "./Introduction";
+
 const Dashboard = () => {
   /**handle login for  admin*/
   let history = useHistory();
@@ -37,6 +39,25 @@ const Dashboard = () => {
 
       <div className="sidebar">
         <SideBar />
+      </div>
+      <div className="introduction">
+        <Introduction />
+      </div>
+      <div className="introduction">
+        <Introduction />
+      </div>
+      <div className="projects">
+        <div>
+          <p>dasjhdjkashdjkahsjkdhjkas</p>
+          <p>dasjhdjkashdjkahsjkdhjkas</p>
+          <p>dasjhdjkashdjkahsjkdhjkas</p>
+          <p>dasjhdjkashdjkahsjkdhjkas</p>
+          <p>dasjhdjkashdjkahsjkdhjkas</p>
+          <p>dasjhdjkashdjkahsjkdhjkas</p>
+          <p>dasjhdjkashdjkahsjkdhjkas</p>
+          <p>dasjhdjkashdjkahsjkdhjkas</p>
+          <p>dasjhdjkashdjkahsjkdhjkas</p>
+        </div>
       </div>
       <SliderIntro />
     </>

@@ -1,9 +1,10 @@
 .sidebar__main {
   display: flex;
   flex-direction: column;
-  padding: 0px 2px 29px 10px;
+  padding: 42px 2px 29px 10px;
+  position: fixed;
 }
-p {
+.sidebar__main > p {
   padding: 0px 14px 19px 0px;
   cursor: pointer;
 }

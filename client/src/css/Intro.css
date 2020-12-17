@@ -1,0 +1,76 @@
+.name__intro__card {
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-weight: 900;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 4px rgb(0 0 0);
+  height: 338px;
+  width: 313px;
+  display: flex;
+  margin-top: 23px;
+}
+.header_introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro_details {
+  width: 350px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro_text {
+  margin: 7px 42px 4px 46px;
+}
+.intro_job_title,
+.intro_job_details,
+.intro_story {
+  margin: 7px 42px 0px 46px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.fname,
+.lname {
+  display: none;
+}
+.responsive_name {
+  display: flex;
+  justify-content: flex-start;
+  width: 258px;
+  margin-top: -40px;
+}
+.intro_name {
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro_name_ul {
+  width: 140px;
+  height: 6px;
+  background-color: yellow;
+  margin-top: -22px;
+}
+@media (max-width: 800px) {
+  .intro_job_title {
+    color: rgb(252, 220, 188) !important;
+  }
+  .intro_job_details {
+    color: aliceblue !important;
+  }
+  .responsive_name {
+    margin-top: -7px;
+  }
+  .name__intro__card {
+    width: 287px;
+  }
+  .header_introduction {
+    margin-left: -16px;
+  }
+}
