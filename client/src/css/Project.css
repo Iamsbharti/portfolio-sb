@@ -346,9 +346,6 @@ code {
     /** min-height: 20vh;*/
   }
 
-  .project__job__profile {
-    display: none;
-  }
   .project__card__mobile__div {
     display: block;
   }
@@ -418,7 +415,7 @@ code {
   .project__card {
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 1px 1px 4px rgb(0 0 0);
+    box-shadow: 1px 1px 6px white;
     border-radius: 9px;
     width: 240px;
     height: auto;
@@ -468,13 +465,12 @@ code {
     cursor: pointer;
   }
   .react-multi-carousel-list > li {
-    background-image: var(--bg-black-grad) !important;
   }
   .react-multi-carousel-item {
     width: 250px !important;
   }
   .project__card__mobile__carousel {
-    background-image: var(--bg-black-grad) !important;
     color: white;
+    width: 300px;
   }
 }
