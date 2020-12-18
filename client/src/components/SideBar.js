@@ -40,13 +40,21 @@ export const SideBar = () => {
         <img
           src={process.env.PUBLIC_URL + "/icons8-stack-correctly-96.png"}
           alt=""
-          title="contact me"
+          title="tech stack"
         />
       </p>
       <p>
         <img
           src={process.env.PUBLIC_URL + "/icons8-contact-details-96.png"}
           alt=""
+          title="contact me"
+        />
+      </p>
+      <p>
+        <img
+          src={process.env.PUBLIC_URL + "/icons8-squared-menu-96.png"}
+          alt=""
+          title="main content"
         />
       </p>
     </div>
