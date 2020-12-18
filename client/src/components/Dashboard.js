@@ -6,6 +6,7 @@ import { SideBar } from "./SideBar";
 import { SliderIntro } from "./SliderIntro";
 import { Introduction } from "./Introduction";
 import { JobProfile } from "./JobProfile";
+import Project from "./Project";
 const Dashboard = () => {
   /**handle login for  admin*/
   let history = useHistory();
@@ -45,6 +46,9 @@ const Dashboard = () => {
       </div>
       <div className="profile">
         <JobProfile />
+      </div>
+      <div className="projects">
+        <Project />
       </div>
       <SliderIntro />
     </>

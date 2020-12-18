@@ -1,0 +1,480 @@
+* {
+  --bg-black-grad: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      157.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      112.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      22.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    linear-gradient(90deg, rgb(34, 34, 34), rgb(34, 34, 34));
+  --bg-gray-grad: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      112.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    linear-gradient(90deg, rgb(61, 61, 61), rgb(61, 61, 61));
+}
+.project {
+  display: flex;
+  background-image: var(--bg-gray-grad);
+  height: 321px;
+  /** min-height: 20vh;*/
+}
+.project__job__profile__mobile {
+  display: none;
+}
+.position__2 {
+  display: none;
+}
+.project__card__mobile__div {
+  display: none;
+}
+
+.project__job__profile__card {
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+  margin: 10px;
+  padding: 30px;
+  position: relative;
+  height: 199px;
+  width: 200px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  margin-top: 10px;
+  margin-right: 56px;
+}
+.color__sec {
+  color: yellow;
+}
+.color__ml {
+  color: sandybrown;
+}
+.color__fs {
+  color: #c2c2c2;
+}
+.job__profile__icons {
+  font-size: 14px;
+  color: white;
+}
+.project__section__mobile {
+  display: none;
+}
+.project__stack {
+  display: none;
+}
+.project__section {
+  display: flex;
+  background-image: var(--bg-black-grad);
+  min-height: 80vh;
+}
+.projects__intro_p1 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 238px;
+  color: white;
+  position: relative;
+  top: -109px;
+}
+.project__intro__desc {
+  margin-left: 13px;
+  cursor: pointer;
+}
+.color {
+  color: yellow;
+}
+.project__intro {
+  width: 250px;
+  height: 250px;
+}
+.project__intro h3 {
+  color: #9da9ce;
+  margin-bottom: 0.9rem;
+}
+.project1__card {
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+  border-radius: 9px;
+  width: 306px;
+  height: 350px;
+  margin-left: 177px;
+  opacity: 0;
+}
+.project__image {
+  width: 230px;
+  height: 230px;
+}
+.project__card__name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+}
+.project__card__techstack {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 18px;
+}
+code {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+.icon_img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.project__tech {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -14px;
+}
+.project__golive {
+  display: flex;
+  justify-content: space-between;
+}
+.icon_img_shuttle {
+  margin-top: 4px;
+  width: 20px;
+  height: 20px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.project__section2 {
+  background-image: var(--bg-gray-grad);
+  height: 289px;
+}
+.project2__card__position {
+  min-height: 20vh;
+  position: relative;
+  top: -412px;
+  left: 55px;
+}
+.project3__card__position {
+  position: relative;
+  top: -567px;
+  left: 490px;
+}
+
+/**Project page styles**/
+.project__page {
+  min-height: 100vh;
+  background-image: var(--bg-black-grad);
+  color: white;
+}
+.MuiChip-label {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  color: white !important;
+}
+.MuiChip-outlined {
+  border-color: rgb(199, 199, 145) !important;
+}
+.MuiChip-avatarColorSecondary {
+  background-color: black !important;
+}
+.MuiChip-clickableColorSecondary:hover {
+  transform: translate(100);
+}
+.MuiChip-colorSecondary {
+  color: black !important;
+}
+.project__page__filters {
+  padding: 20px;
+}
+.project__page__intro {
+  margin: 0px 0px 0px 52px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.project__page__cards__section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card__div__iterator {
+  display: flex;
+}
+.project__card {
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+  border-radius: 9px;
+  width: 306px;
+  height: auto;
+  margin-left: 18px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  align-self: flex-start;
+}
+.expand__icon,
+.collapse__icon {
+  cursor: pointer;
+}
+.project__description .description::first-letter {
+  font-weight: 800 !important;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.project__image {
+  width: 100% !important;
+  object-fit: contain;
+}
+.project__not__found {
+  background-image: var(--bg-black-grad);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project__not__found > p {
+  margin: -188px 0px 10px 0px;
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow: blanchedalmond;
+  /**margin fo mobile 0px 0px 395px 0px**/
+}
+.project__not__found > img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 240px;
+}
+
+/**Mobile styles**/
+@media (max-width: 800px) {
+  .project {
+    display: flex;
+    background-image: var(--bg-gray-grad);
+    height: 100px !important;
+    /** min-height: 20vh;*/
+  }
+
+  .project__job__profile {
+    display: none;
+  }
+  .project__card__mobile__div {
+    display: block;
+  }
+
+  .project__job__profile__mobile {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -57px;
+    left: 46px;
+  }
+  .project__job__profile__card__mobile {
+    box-sizing: border-box;
+    border-radius: 9px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    height: 99px;
+    width: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-right: 56px;
+  }
+  .position__2 {
+    margin: 0px !important;
+    margin-left: -192px !important;
+    margin-top: 59px !important;
+  }
+  .job__profile__icons {
+    font-size: 14px;
+    color: white;
+  }
+  /**project page**/
+  .project__section {
+    display: none;
+  }
+  .project__section2 {
+    display: none;
+  }
+  .project__section__mobile {
+    display: flex;
+    background-image: var(--bg-black-grad);
+    margin-bottom: -257px;
+  }
+  .project__intro__mobile {
+    width: 350px;
+    height: 350px;
+  }
+  .projects__intro_p1__mobile {
+    margin: 81px 62px 0px 57px !important;
+    color: white;
+  }
+  .project__intro__desc {
+    margin-left: 13px;
+    cursor: pointer;
+  }
+  .project__card__1__mobile {
+    margin: -369px 10px 10px -137px;
+  }
+  .project__card {
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px rgb(0 0 0);
+    border-radius: 9px;
+    width: 240px;
+    height: auto;
+    margin-left: 18px;
+    margin-bottom: 15px;
+    align-self: flex-start;
+  }
+  .project__image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .project__card__name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+  }
+  .project__card__techstack {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18px;
+  }
+  code {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .icon_img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .project__tech {
+    display: flex;
+    justify-content: space-between;
+  }
+  .project__golive {
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon_img_shuttle {
+    margin-top: 4px;
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    cursor: pointer;
+  }
+  .react-multi-carousel-list > li {
+    background-image: var(--bg-black-grad) !important;
+  }
+  .react-multi-carousel-item {
+    width: 250px !important;
+  }
+  .project__card__mobile__carousel {
+    background-image: var(--bg-black-grad) !important;
+    color: white;
+  }
+}
