@@ -47,7 +47,11 @@ body {
     padding: 30px;
   }
   .projects {
-    margin: 0px 0px 0px 52px;
+    margin: 0px;
     padding: 30px;
+  }
+  .certs {
+    margin: 0px;
+    margin: 0px;
   }
 }

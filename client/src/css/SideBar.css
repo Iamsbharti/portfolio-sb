@@ -16,5 +16,6 @@ img {
 @media (max-width: 800px) {
   .sidebar__main {
     padding: 20px;
+    position: absolute;
   }
 }
