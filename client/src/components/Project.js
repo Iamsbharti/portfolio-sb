@@ -75,6 +75,7 @@ const Project = ({ getAllProjectAction, projects }) => {
   };
   return (
     <div className="project__card__mobile__carousel">
+      <p className="cert_text">- Projects</p>
       <Carousel responsive={responsive}>
         {stateProjects.map((project, index) => (
           <div className="project__card" key={index}>

@@ -3,21 +3,22 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .cert__img__icon {
   width: 131px;
   height: 124px;
   cursor: pointer;
 }
+.cert__img__icon:hover {
+  transform: scale(0.9);
+}
 .cert_text {
-  color: #9da9ce;
+  color: #ee7728;
   margin-bottom: 1.1rem;
 }
 @media (max-width: 800px) {
-  .cert__section {
-    padding: 3rem 10rem;
-  }
   .cert_text {
-    margin-left: -55px;
+    margin-left: 13px;
     font-weight: 900;
   }
 }
