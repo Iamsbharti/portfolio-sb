@@ -1,0 +1,23 @@
+.cert__section__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cert__img__icon {
+  width: 131px;
+  height: 124px;
+  cursor: pointer;
+}
+.cert_text {
+  color: #9da9ce;
+  margin-bottom: 1.1rem;
+}
+@media (max-width: 800px) {
+  .cert__section {
+    padding: 3rem 10rem;
+  }
+  .cert_text {
+    margin-left: -55px;
+    font-weight: 900;
+  }
+}

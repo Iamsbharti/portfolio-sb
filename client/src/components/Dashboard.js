@@ -7,6 +7,7 @@ import { SliderIntro } from "./SliderIntro";
 import { Introduction } from "./Introduction";
 import { JobProfile } from "./JobProfile";
 import Project from "./Project";
+import { Certification } from "./Certification";
 const Dashboard = () => {
   /**handle login for  admin*/
   let history = useHistory();
@@ -49,6 +50,9 @@ const Dashboard = () => {
       </div>
       <div className="projects">
         <Project />
+      </div>
+      <div className="certs">
+        <Certification />
       </div>
       <SliderIntro />
     </>
