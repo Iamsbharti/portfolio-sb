@@ -17,6 +17,7 @@
 .my-widget {
   display: inline-block;
   position: relative;
+
   --bg-color: #111;
   --header-bg-color: black;
   --badge-bg-color: #333;
@@ -54,12 +55,6 @@
 }
 /**Mobile styles**/
 @media (max-width: 800px) {
-  .div__slider__ref {
-    height: 78vh;
-  }
-  .techstack {
-    display: none;
-  }
   .techstack__mobile {
     display: flex;
     padding: 2rem 6rem;
@@ -77,10 +72,6 @@
     display: inline-block;
     position: relative;
     width: 357px !important;
-    margin-right: -74px;
-    margin-left: 287px;
-    top: 10px;
-    left: -350px;
     --bg-color: #111;
     --header-bg-color: black;
     --badge-bg-color: #333;

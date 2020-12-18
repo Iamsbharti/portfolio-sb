@@ -10,8 +10,8 @@ export const TechSatck = () => {
 
   return (
     <>
+      <p className="cert_text">- Codersrank Profile</p>
       <div className="techstack">
-        <code className="cert_text">- TechStack</code>
         <div
           className="widget__div"
           ref={(ele) => {
