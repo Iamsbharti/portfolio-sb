@@ -303,6 +303,9 @@ code {
   margin-top: 5px;
   align-self: flex-start;
 }
+.project__card:hover {
+  transform: scale(0.9);
+}
 .expand__icon,
 .collapse__icon {
   cursor: pointer;
