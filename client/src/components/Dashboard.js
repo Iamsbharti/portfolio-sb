@@ -9,6 +9,7 @@ import { JobProfile } from "./JobProfile";
 import Project from "./Project";
 import { Certification } from "./Certification";
 import { TechSatck } from "./TechSatck";
+import { Footer } from "./Footer";
 const Dashboard = () => {
   /**handle login for  admin*/
   let history = useHistory();
@@ -57,6 +58,9 @@ const Dashboard = () => {
       </div>
       <div className="techs">
         <TechSatck />
+      </div>
+      <div className="foot">
+        <Footer />
       </div>
       <SliderIntro />
     </>

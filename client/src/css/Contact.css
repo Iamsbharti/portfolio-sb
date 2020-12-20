@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url(../assets/pexels-sohail-na-807598.jpg);
+}
+.footer > p {
+  font-weight: 800;
+  font-size: large;
+  color: white;
+}
