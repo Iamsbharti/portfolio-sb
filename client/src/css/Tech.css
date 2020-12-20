@@ -53,6 +53,11 @@
 .icon_img_tech:hover {
   transform: scale(1.5);
 }
+.techstack__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 /**Mobile styles**/
 @media (max-width: 800px) {
   .techstack__mobile {
