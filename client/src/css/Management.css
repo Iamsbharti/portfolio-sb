@@ -1,0 +1,122 @@
+.manage__page {
+  min-height: 100vh;
+  color: white;
+}
+.manage__page > code {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 30px;
+  margin-left: 20px;
+}
+.manage__options {
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 40px;
+}
+.divider {
+  background-color: white;
+  height: 2px;
+  width: 330px;
+}
+.content__card {
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+  margin: 5px;
+  padding: 30px;
+  position: relative;
+  height: 300px;
+  width: 390px;
+}
+.content__card > p {
+  margin: 20px;
+}
+h1 {
+  padding: 16px;
+  margin-left: 33px;
+}
+.status {
+  margin-left: 40px;
+  color: red;
+}
+/**Manage projects console**/
+.managae__content {
+  padding: 30px;
+}
+.projects {
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+  margin: 5px;
+  padding: 20px;
+  position: relative;
+  height: 400px;
+  width: 600px;
+}
+
+.projects {
+  overflow-y: auto;
+}
+.MuiTypography-body1 {
+  font-size: 16px !important;
+  font-weight: 900 !important;
+}
+/**Form input styles**/
+.upload_cover {
+  display: flex;
+  margin: 20px;
+}
+.coverpic_label {
+  margin-top: -26px;
+  margin-left: 30px;
+}
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  color: blue;
+  display: inline-block;
+  padding: 6px 1px;
+  cursor: pointer;
+}
+.upload__message {
+  margin: 10px;
+  font-size: 12px;
+  font-weight: 900;
+  color: green;
+}
+.form__card {
+  display: flex;
+  justify-content: space-between;
+}
+.techstack__chips {
+  margin: 20px;
+}
+.type__chips {
+  margin: 20px;
+}
+
+.MuiChip-root.Mui-disabled {
+  opacity: 60.5 !important;
+}
+.MuiChip-label {
+  /** color: black !important;**/
+}
+.img__div {
+  padding: 20px;
+  margin-left: 120px;
+}
+.img__div > img {
+  width: 150px;
+  height: 150px;
+}
+.back__icon {
+  margin: 5px !important;
+  cursor: pointer;
+}
