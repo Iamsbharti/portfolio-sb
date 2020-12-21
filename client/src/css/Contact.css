@@ -59,7 +59,7 @@ textarea {
 input:focus {
   outline: none;
 }
-.button__login {
+.button__logins {
   box-sizing: border-box;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
   font-weight: 900;
@@ -67,18 +67,18 @@ input:focus {
   text-transform: inherit;
   border-radius: 12px;
   height: 35px;
-  width: 226px;
+  width: 50px;
   margin-top: 20px;
   cursor: pointer;
   color: white;
 }
+.button__login {
+  margin-bottom: 5px !important;
+}
 input::-webkit-input-placeholder {
   padding-left: 15px;
 }
-.button__login > p {
-  display: inline-block;
-  margin: 2px 93px;
-}
+
 .button__login {
   transition: all 0.2s ease-in-out;
 }

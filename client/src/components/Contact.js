@@ -1,5 +1,8 @@
 import React from "react";
-
+import "../css/Contact.css";
+import SendIcon from "@material-ui/icons/Send";
+import Button from "@material-ui/core/Button";
+import CancelScheduleSendIcon from "@material-ui/icons/CancelScheduleSend";
 export const Contact = () => {
   return (
     <>
@@ -63,12 +66,22 @@ export const Contact = () => {
           </label>
           <textarea name="message" placeholder="message" />
           <br />
-          <div className="button__login">
-            <p>Send</p>
-          </div>
-          <span className="cancel__span">
-            <code>Cancel?</code>
-          </span>
+          <Button
+            variant="contained"
+            color="primary"
+            startIcon={<SendIcon />}
+            className="button__login"
+          >
+            Send
+          </Button>
+          <Button
+            variant="contained"
+            color="secondary"
+            className="button__login"
+            startIcon={<CancelScheduleSendIcon />}
+          >
+            Cancel
+          </Button>
         </div>
       </div>
     </>
