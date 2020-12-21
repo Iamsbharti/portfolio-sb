@@ -4,7 +4,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.project__job__profile__card {
+.job__profile__card {
   box-sizing: border-box;
   border-radius: 9px;
   font-weight: 800;
@@ -36,7 +36,7 @@
   color: white;
 }
 @media (max-width: 800px) {
-  .project__job__profile__card {
+  .job__profile__card {
     height: 120px;
     width: 184px;
   }

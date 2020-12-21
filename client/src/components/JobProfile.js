@@ -15,7 +15,7 @@ export const JobProfile = () => {
         {" "}
         <div className="project__job__profile">
           <div
-            className="project__job__profile__card color__sec"
+            className="job__profile__card color__sec"
             ref={(ele) => {
               card_sec = ele;
             }}
@@ -27,7 +27,7 @@ export const JobProfile = () => {
             <h3>Security Consultant</h3>
           </div>
           <div
-            className="project__job__profile__card color__fs"
+            className="job__profile__card color__fs"
             ref={(ele) => {
               card_stack = ele;
             }}
@@ -39,7 +39,7 @@ export const JobProfile = () => {
             <h3>Full Stack Developer</h3>
           </div>
           <div
-            className="project__job__profile__card color__ml"
+            className="job__profile__card color__ml"
             ref={(ele) => {
               card_ml = ele;
             }}

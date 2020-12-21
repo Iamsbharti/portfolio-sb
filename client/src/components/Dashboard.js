@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from "react";
+import React, { useEffect, useCallback, useRef } from "react";
 import "../css/Dashboard.css";
 import { useHistory } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -12,6 +12,23 @@ import { TechSatck } from "./TechSatck";
 import { Footer } from "./Footer";
 import { Contact } from "./Contact";
 const Dashboard = () => {
+  const certsRef = useRef(null);
+  const techRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollExecutor = (refs) => {
+    console.log("scroll ece:", refs);
+    switch (refs) {
+      case "certs":
+        certsRef.current.scrollIntoView();
+        break;
+      default:
+    }
+  };
+  /**useEffect(() => {
+    scrollExecutor();
+  }, []);**/
+
   /**handle login for  admin*/
   let history = useHistory();
   const loginFunction = useCallback(
@@ -43,7 +60,7 @@ const Dashboard = () => {
       </div>
 
       <div className="sidebar">
-        <SideBar />
+        <SideBar handleScrollBehaviour={scrollExecutor} />
       </div>
       <div className="introduction">
         <Introduction />
@@ -54,13 +71,13 @@ const Dashboard = () => {
       <div className="projects">
         <Project />
       </div>
-      <div className="certs">
+      <div className="certs" ref={certsRef}>
         <Certification />
       </div>
-      <div className="techs">
+      <div className="techs" ref={techRef}>
         <TechSatck />
       </div>
-      <div className="contact">
+      <div className="contact" ref={contactRef}>
         <Contact />
       </div>
       <div className="foot">
