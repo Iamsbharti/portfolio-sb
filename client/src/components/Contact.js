@@ -7,28 +7,46 @@ export const Contact = () => {
       <div className="contact__main">
         <div className="social__icons">
           <p>
-            <img
-              src={process.env.PUBLIC_URL + "/icons8-twitter-48.png"}
-              className="icon_img_tech"
-              title="Twitter"
-              alt="HTML"
-            />
+            <a
+              href="https://twitter.com/saurabhbharti_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={process.env.PUBLIC_URL + "/icons8-twitter-48.png"}
+                className="icon_img_contact"
+                title="Twitter"
+                alt="HTML"
+              />
+            </a>
           </p>
           <p>
-            <img
-              src={process.env.PUBLIC_URL + "/icons8-linkedin-48.png"}
-              className="icon_img_tech"
-              title="linkedIn"
-              alt="linkedIn"
-            />
+            <a
+              href="https://www.linkedin.com/in/saurabh-bharti-2ba3018a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={process.env.PUBLIC_URL + "/icons8-linkedin-48.png"}
+                className="icon_img_contact"
+                title="linkedIn"
+                alt="linkedIn"
+              />
+            </a>
           </p>
           <p>
-            <img
-              src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
-              className="icon_img_tech"
-              title="github"
-              alt="github"
-            />
+            <a
+              href="https://github.com/Iamsbharti"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
+                className="icon_img_contact"
+                title="github"
+                alt="github"
+              />
+            </a>
           </p>
         </div>
         <div className="message__box">

@@ -5,9 +5,17 @@
 }
 .social__icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
+.social__icons > p {
+  margin: 16px 42px 17px 10px;
+}
+.icon_img_contact {
+  width: 35px;
+  height: 35px;
+}
+
 .message__box {
 }
 .message__footer {
