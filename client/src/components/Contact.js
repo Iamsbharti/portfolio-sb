@@ -50,12 +50,25 @@ export const Contact = () => {
           </p>
         </div>
         <div className="message__box">
+          <label className="label" htmlFor="name">
+            Name
+          </label>
           <input type="text" name="name" placeholder="you name" />
+          <label className="label" htmlFor="email">
+            Email
+          </label>
           <input type="email" name="email" placeholder="you email" />
+          <label className="label" htmlFor="message">
+            Message
+          </label>
           <textarea name="message" placeholder="message" />
-          <div className="message__footer"></div>
-          <button>Send</button>
-          <button>Cancel</button>
+          <br />
+          <div className="button__login">
+            <p>Send</p>
+          </div>
+          <span className="cancel__span">
+            <code>Cancel?</code>
+          </span>
         </div>
       </div>
     </>
