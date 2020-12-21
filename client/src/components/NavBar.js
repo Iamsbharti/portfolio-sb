@@ -78,7 +78,7 @@ const NavBar = () => {
             >
               <li onClick={() => handleNavigation("projects")}>Projects</li>
               <li onClick={() => handleNavigation("blogs")}>Blogs</li>
-              <li>Contact Me</li>
+              <li onClick={() => handleNavigation("contacts")}>Contact Me</li>
             </ul>
           </nav>
         </div>
@@ -101,7 +101,7 @@ const NavBar = () => {
           >
             <li onClick={() => handleNavigation("projects")}>Projects</li>
             <li onClick={() => handleNavigation("blogs")}>Blogs</li>
-            <li>Contact Me</li>
+            <li onClick={() => handleNavigation("contacts")}>Contact Me</li>
           </ul>
         </nav>
       </div>
