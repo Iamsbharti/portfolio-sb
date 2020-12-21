@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import "../css/SideBar.css";
 import { sideBarIntro } from "./Animation";
-
+import { useHistory } from "react-router-dom";
 export const SideBar = () => {
+  let history = useHistory();
   let sideBarEle = useRef(null);
   useEffect(() => {
     sideBarIntro(sideBarEle);
@@ -20,6 +21,7 @@ export const SideBar = () => {
           src={process.env.PUBLIC_URL + "/shuttle.png"}
           alt=""
           title="projects"
+          onClick={() => history.push("/projects")}
         />
       </p>
       <p>
