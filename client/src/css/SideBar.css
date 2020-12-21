@@ -12,6 +12,9 @@ img {
   width: 45px;
   height: 45px;
 }
+img:hover {
+  transform: scale(1.1);
+}
 /***mobile design**/
 @media (max-width: 800px) {
   .sidebar__main {

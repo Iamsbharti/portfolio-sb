@@ -31,7 +31,9 @@ nav {
   cursor: pointer;
   color: white;
 }
-
+.nav__links > li:hover {
+  transform: scale(1.1);
+}
 /***mobile design**/
 @media (max-width: 800px) {
   .non_mobile {
