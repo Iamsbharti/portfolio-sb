@@ -107,9 +107,7 @@ input[type="file"] {
 .MuiChip-root.Mui-disabled {
   opacity: 60.5 !important;
 }
-.MuiChip-label {
-  /** color: black !important;**/
-}
+
 .img__div {
   padding: 20px;
   margin-left: 120px;
