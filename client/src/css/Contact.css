@@ -121,3 +121,11 @@ code:hover {
   font-size: large;
   color: white;
 }
+@media (max-width: 800px) {
+  .email__section {
+    margin-top: 0px;
+  }
+  .message__box {
+    margin-right: 0px;
+  }
+}
