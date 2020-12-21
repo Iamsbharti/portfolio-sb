@@ -93,7 +93,7 @@ export const Contact = () => {
             className="button__login"
             startIcon={<CancelScheduleSendIcon />}
           >
-            Cancel
+            Clear
           </Button>
         </div>
       </div>
