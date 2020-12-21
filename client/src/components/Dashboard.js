@@ -11,16 +11,31 @@ import { Certification } from "./Certification";
 import { TechSatck } from "./TechSatck";
 import { Footer } from "./Footer";
 import { Contact } from "./Contact";
+
 const Dashboard = () => {
   const certsRef = useRef(null);
   const techRef = useRef(null);
   const contactRef = useRef(null);
+  const mainRef = useRef(null);
+  const projectsRef = useRef(null);
 
   const scrollExecutor = (refs) => {
     console.log("scroll ece:", refs);
     switch (refs) {
       case "certs":
         certsRef.current.scrollIntoView();
+        break;
+      case "main":
+        mainRef.current.scrollIntoView();
+        break;
+      case "tech":
+        techRef.current.scrollIntoView();
+        break;
+      case "contact":
+        contactRef.current.scrollIntoView();
+        break;
+      case "projects":
+        projectsRef.current.scrollIntoView();
         break;
       default:
     }
@@ -62,13 +77,13 @@ const Dashboard = () => {
       <div className="sidebar">
         <SideBar handleScrollBehaviour={scrollExecutor} />
       </div>
-      <div className="introduction">
+      <div className="introduction" ref={mainRef}>
         <Introduction />
       </div>
       <div className="profile">
         <JobProfile />
       </div>
-      <div className="projects">
+      <div className="projects" ref={projectsRef}>
         <Project />
       </div>
       <div className="certs" ref={certsRef}>

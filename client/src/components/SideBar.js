@@ -21,7 +21,7 @@ export const SideBar = ({ handleScrollBehaviour }) => {
           src={process.env.PUBLIC_URL + "/shuttle.png"}
           alt=""
           title="projects"
-          onClick={() => history.push("/projects")}
+          onClick={() => handleScrollBehaviour("projects")}
         />
       </p>
       <p>
@@ -29,6 +29,7 @@ export const SideBar = ({ handleScrollBehaviour }) => {
           src={process.env.PUBLIC_URL + "/icons8-blogger-256.png"}
           alt=""
           title="blogs"
+          onClick={() => handleScrollBehaviour("blogs")}
         />
       </p>
       <p>
@@ -44,6 +45,7 @@ export const SideBar = ({ handleScrollBehaviour }) => {
           src={process.env.PUBLIC_URL + "/icons8-stack-correctly-96.png"}
           alt=""
           title="tech stack"
+          onClick={() => handleScrollBehaviour("tech")}
         />
       </p>
       <p>
@@ -51,6 +53,7 @@ export const SideBar = ({ handleScrollBehaviour }) => {
           src={process.env.PUBLIC_URL + "/icons8-contact-details-96.png"}
           alt=""
           title="contact me"
+          onClick={() => handleScrollBehaviour("contact")}
         />
       </p>
       <p>
@@ -58,6 +61,7 @@ export const SideBar = ({ handleScrollBehaviour }) => {
           src={process.env.PUBLIC_URL + "/icons8-squared-menu-96.png"}
           alt=""
           title="main content"
+          onClick={() => handleScrollBehaviour("main")}
         />
       </p>
     </div>
