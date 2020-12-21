@@ -33,7 +33,10 @@ body {
   margin: 0px 0px 0px 80px;
   padding: 30px;
 }
-
+.contact {
+  margin: 0px 0px 0px 80px;
+  padding: 30px;
+}
 @media (max-width: 800px) {
   body {
     background-image: url("../assets/pexels-octoptimist-4904342.jpg");
@@ -59,6 +62,9 @@ body {
     margin: 0px;
   }
   .techs {
+    margin: 0px;
+  }
+  .contact {
     margin: 0px;
   }
 }

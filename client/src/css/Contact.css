@@ -1,3 +1,20 @@
+.contact__main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.social__icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.message__box {
+}
+.message__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .footer {
   display: flex;
   flex-wrap: wrap;
