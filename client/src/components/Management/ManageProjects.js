@@ -106,7 +106,7 @@ const ManageProjects = ({
             saveProject={handleSaveProject}
           />
         )}
-        <div className="projects">
+        <div className="manage__projects">
           <p className="header">Current Projects</p>
           <List component="ul">
             {projects &&

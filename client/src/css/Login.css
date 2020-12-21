@@ -1,6 +1,7 @@
 .login__page {
   min-height: 100vh;
-  background-image: var(--bg-black-grad);
+  background-image: url("../assets/pexels-sohail-na-807598.jpg");
+  background-size: cover;
   color: white;
 }
 .login__content {
@@ -9,10 +10,10 @@
 .login__form {
   padding: 25px;
   box-sizing: border-box;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+  box-shadow: 2px 1px 10px ghostwhite;
   border-radius: 9px;
   width: 306px;
-  height: 400px;
+  height: 465px;
   margin-left: 20px;
   margin-bottom: 15px;
 }
