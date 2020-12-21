@@ -51,7 +51,20 @@ export const Contact = () => {
               />
             </a>
           </p>
+          <div className="break"></div>
+          <div className="email__section">
+            <p>Any Type of Query & Discussion.</p>
+            <p>- Email</p>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=Saurabhbharti9@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <code>Saurabhbharti9@gmail.com</code>
+            </a>
+          </div>
         </div>
+
         <div className="message__box">
           <label className="label" htmlFor="name">
             Name
