@@ -2,6 +2,7 @@ const router = require("express").Router();
 const users = require("../controller/userControl");
 const posts = require("../controller/postControl");
 const blogs = require("../controller/blogControl");
+const contact = require("../controller/contactControl");
 const auth = require("../middlewares/authorization");
 const db = require("../initdb");
 const multer = require("multer");
@@ -56,5 +57,6 @@ router.delete("/portfolio/deleteBlog", auth.isAuthorized, blogs.deleteBlog);
 router.get("/project/picture", fetchPictures);
 //router.post("/portfolio/createUser", users.createUser);
 router.post("/portfolio/login", users.adminLogin);
-
+// send message
+router.post("/portfolio/message", contact.sendMessageMail);
 module.exports = router;
