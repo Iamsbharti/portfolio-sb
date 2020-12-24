@@ -308,3 +308,20 @@ export const deleteBlog = async (blogInfo) => {
     return error.response.data;
   }
 };
+export const sendMessage = async (name, email, message) => {
+  console.log("calling api send message");
+  try {
+    let res = await axios.post(
+      `${baseUrl}/api/v1/portfolio/message?name=${name}&email=${email}&message=${message}`
+    );
+    console.log("send message response", res);
+    if (!res.data.error) {
+      toast.success(res.data.message);
+      return true;
+    }
+  } catch (error) {
+    console.warn("Error sending  message");
+    toast.error(error.response.data.message);
+    return false;
+  }
+};

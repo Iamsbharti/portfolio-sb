@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Contact.css";
 import SendIcon from "@material-ui/icons/Send";
 import Button from "@material-ui/core/Button";
 import CancelScheduleSendIcon from "@material-ui/icons/CancelScheduleSend";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { sendMessage } from "../api/apis";
 export const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSendMessage = async () => {
+    let res = await sendMessage(name, email, message);
+    if (res) {
+      handleClearMessage();
+    }
+  };
+  const handleClearMessage = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
   return (
     <>
       <p className="cert_text">- Contacts</p>
@@ -69,21 +86,40 @@ export const Contact = () => {
           <label className="label" htmlFor="name">
             Name
           </label>
-          <input type="text" name="name" placeholder="you name" />
+          <input
+            type="text"
+            name="name"
+            placeholder="you name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
           <label className="label" htmlFor="email">
             Email
           </label>
-          <input type="email" name="email" placeholder="you email" />
+          <input
+            type="email"
+            name="email"
+            placeholder="you email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <label className="label" htmlFor="message">
             Message
           </label>
-          <textarea name="message" placeholder="message" />
+          <textarea
+            name="message"
+            placeholder="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
           <br />
+          <div className=""></div>
           <Button
             variant="contained"
             color="primary"
             startIcon={<SendIcon />}
             className="button__login"
+            onClick={handleSendMessage}
           >
             Send
           </Button>
@@ -92,11 +128,13 @@ export const Contact = () => {
             color="secondary"
             className="button__login"
             startIcon={<CancelScheduleSendIcon />}
+            onClick={handleClearMessage}
           >
             Clear
           </Button>
         </div>
       </div>
+      <ToastContainer autoClose={1599} hideProgressBar />
     </>
   );
 };
