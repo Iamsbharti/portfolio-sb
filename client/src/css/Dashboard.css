@@ -44,6 +44,9 @@ body {
   margin: 0px 0px 0px 80px;
   padding: 30px;
 }
+.foot {
+  width: 100%;
+}
 @media (max-width: 800px) {
   body {
     background-image: url("../assets/pexels-octoptimist-4904342.jpg");
