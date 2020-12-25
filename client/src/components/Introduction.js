@@ -73,7 +73,7 @@ export const Introduction = () => {
                 jobDetails = ele;
               }}
             >
-              Security Consultant, building FullStack applications
+              I am a Security Consultant and build FullStack applications.
             </p>
           </div>
         </div>
