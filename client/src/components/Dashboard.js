@@ -92,7 +92,7 @@ const Dashboard = () => {
       <div className="techs" ref={techRef}>
         <TechSatck />
       </div>
-      <div className="contact" ref={contactRef}>
+      <div className="contact67" ref={contactRef}>
         <Contact />
       </div>
       <div className="foot">

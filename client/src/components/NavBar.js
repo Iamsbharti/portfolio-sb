@@ -13,7 +13,6 @@ const NavBar = () => {
   let history = useHistory();
   /**route back to feed  */
   const handleNavigation = (to) => {
-    console.log("navigating to ", to);
     history.push(`/${to}`);
   };
 
@@ -77,7 +76,7 @@ const NavBar = () => {
               }}
             >
               <li onClick={() => handleNavigation("projects")}>Projects</li>
-              <li onClick={() => handleNavigation("blogs")}>Blogs</li>
+              {/**  <li onClick={() => handleNavigation("blogs")}>Blogs</li>**/}
               <li onClick={() => handleNavigation("contacts")}>Contact Me</li>
             </ul>
           </nav>
@@ -100,7 +99,7 @@ const NavBar = () => {
             }}
           >
             <li onClick={() => handleNavigation("projects")}>Projects</li>
-            <li onClick={() => handleNavigation("blogs")}>Blogs</li>
+            {/**  <li onClick={() => handleNavigation("blogs")}>Blogs</li>**/}
             <li onClick={() => handleNavigation("contacts")}>Contact Me</li>
           </ul>
         </nav>

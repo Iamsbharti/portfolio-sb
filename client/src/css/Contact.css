@@ -3,6 +3,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.contact__section {
+  margin: 0px 0px 0px 80px;
+  padding: 30px;
+}
 .social__icons {
   display: flex;
   flex-wrap: wrap;
@@ -133,5 +137,8 @@ code:hover {
   }
   .message__box {
     margin-right: 0px;
+  }
+  .contact__section {
+    margin: 0px;
   }
 }
