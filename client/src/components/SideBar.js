@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "../css/SideBar.css";
 import { sideBarIntro } from "./Animation";
-import { useHistory } from "react-router-dom";
+
 export const SideBar = ({ handleScrollBehaviour }) => {
-  let history = useHistory();
   let sideBarEle = useRef(null);
   useEffect(() => {
     sideBarIntro(sideBarEle);

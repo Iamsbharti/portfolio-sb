@@ -113,13 +113,11 @@ export const sideBarIntro = (ele) => {
     ele,
     {
       opacity: 0,
-      xPercent: 40,
-      yPercent: -20,
+      xPercent: -40,
     },
     {
       opacity: 3,
       xPercent: 0,
-      yPercent: 0,
       stagger: 0.54,
       ease: "back",
       duration: 2,
