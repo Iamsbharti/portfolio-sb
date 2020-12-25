@@ -30,7 +30,7 @@ export var dateFormat = (function () {
     mask = String(dF.masks[mask] || mask || dF.masks["default"]);
 
     // Allow setting the utc argument via the mask
-    if (mask.slice(0, 4) == "UTC:") {
+    if (mask.slice(0, 4) === "UTC:") {
       mask = mask.slice(4);
       utc = true;
     }
@@ -79,7 +79,7 @@ export var dateFormat = (function () {
           (o > 0 ? "-" : "+") +
           pad(Math.floor(Math.abs(o) / 60) * 100 + (Math.abs(o) % 60), 4),
         S: ["th", "st", "nd", "rd"][
-          d % 10 > 3 ? 0 : (((d % 100) - (d % 10) != 10) * d) % 10
+          d % 10 > 3 ? 0 : (((d % 100) - (d % 10) !== 10) * d) % 10
         ],
       };
 

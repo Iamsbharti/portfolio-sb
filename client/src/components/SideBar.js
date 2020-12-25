@@ -24,14 +24,14 @@ export const SideBar = ({ handleScrollBehaviour }) => {
           onClick={() => handleScrollBehaviour("projects")}
         />
       </p>
-      <p>
+      {/**<p>
         <img
           src={process.env.PUBLIC_URL + "/icons8-blogger-256.png"}
           alt=""
           title="blogs"
           onClick={() => handleScrollBehaviour("blogs")}
         />
-      </p>
+      </p>**/}
       <p>
         <img
           src={process.env.PUBLIC_URL + "/icons8-certificate-64.png"}
