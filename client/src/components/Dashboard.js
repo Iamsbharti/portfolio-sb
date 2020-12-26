@@ -20,7 +20,7 @@ const Dashboard = () => {
   const projectsRef = useRef(null);
 
   const scrollExecutor = (refs) => {
-    console.log("scroll ece:", refs);
+    console.debug("scroll ece:", refs);
     switch (refs) {
       case "certs":
         certsRef.current.scrollIntoView();
@@ -49,12 +49,12 @@ const Dashboard = () => {
   const loginFunction = useCallback(
     (event) => {
       const lKey = 76;
-      console.log("event-keycode::", event.keyCode);
+      console.debug("event-keycode::", event.keyCode);
       let evt = event || window.event; // IE support
       let c = evt.keyCode;
       let ctrlDown = evt.ctrlKey || evt.metaKey; // Mac support
       if (ctrlDown && c === lKey) {
-        console.log("login page");
+        console.debug("login page");
         history.push("/login");
       }
     },

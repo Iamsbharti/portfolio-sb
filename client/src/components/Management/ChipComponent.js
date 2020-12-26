@@ -25,11 +25,11 @@ const ChipComponent = ({ chips, type, updateChipContent }) => {
   }, [chips]);
 
   const updateChip = (chip, action) => {
-    console.log("updating chip", chip, action);
+    console.debug("updating chip", chip, action);
     switch (action) {
       case "add":
         let addedChips = [...chipValues, chip];
-        console.log("addedChips:", addedChips);
+        console.debug("addedChips:", addedChips);
         setChipValues(addedChips);
         updateChipContent(addedChips, type);
 

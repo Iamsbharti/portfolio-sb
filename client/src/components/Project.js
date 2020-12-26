@@ -15,16 +15,16 @@ import "../css/Project.css";
 const Project = ({ getAllProjectAction, projects }) => {
   const [stateProjects, setStateProjects] = useState(projects);
   useEffect(() => {
-    console.log("call projects action");
+    console.debug("call projects action");
     getAllProjectAction();
   }, [getAllProjectAction]);
   useEffect(() => {
-    console.log("Effect projects");
+    console.debug("Effect projects");
     setStateProjects(projects);
     // eslint-disable-next-line
   }, [projects]);
   const handleExpandIcon = (projectId) => {
-    console.log("handle expand", projectId);
+    console.debug("handle expand", projectId);
     // change global state
     // eslint-disable-next-line
     setStateProjects(
@@ -178,7 +178,7 @@ const Project = ({ getAllProjectAction, projects }) => {
   );
 };
 const mapStateToProps = ({ projects }) => {
-  console.log("State projects::", projects);
+  console.debug("State projects::", projects);
 
   // update state
   let _projects = [];
@@ -195,7 +195,7 @@ const mapStateToProps = ({ projects }) => {
     );
     return _projects.push(project);
   });
-  console.log("updated project:", _projects);
+  console.debug("updated project:", _projects);
 
   return { projects: _projects };
 };

@@ -35,7 +35,7 @@ const ManageBlogs = ({
   const color = HUE[50];
 
   useEffect(() => {
-    console.log("get all blogs");
+    console.debug("get all blogs");
     getAllBlogAction();
   }, [getAllBlogAction]);
 
@@ -43,7 +43,7 @@ const ManageBlogs = ({
   const [value, setValue] = useState(false);
   //open the dialog box
   const handleClick = () => {
-    console.log("open dialog box");
+    console.debug("open dialog box");
     setValue(true);
   };
   //reset the value after dialog is closed
@@ -59,18 +59,18 @@ const ManageBlogs = ({
   //handle save project
   const handleSaveBlog = (mode, blogInfo) => {
     // based on mode call update or create blog action
-    console.log("Saving project ManageBlog", mode, blogInfo);
+    console.debug("Saving project ManageBlog", mode, blogInfo);
     if (mode) {
-      console.log("edit /update blogs");
+      console.debug("edit /update blogs");
       let updateBloginfo = {
         ...blogInfo,
         blogId: blogToEdit.blogId,
       };
-      console.log("Blog info for Update::", updateBloginfo);
+      console.debug("Blog info for Update::", updateBloginfo);
       updateBlogAction(updateBloginfo);
       setValue(!value);
     } else {
-      console.log("create new blog");
+      console.debug("create new blog");
       createBlogAction(blogInfo);
       setValue(!value);
     }

@@ -5,10 +5,10 @@ export const baseUrl =
   process.env.NODE_ENV === "production" ? "" : "http://localhost:3001";
 
 export const getAllProjects = async () => {
-  console.log("calling api");
+  console.debug("calling api");
   try {
     let allProjects = await axios.get(`${baseUrl}/api/v1/portfolio/projects`);
-    console.log("GET all projects response", allProjects);
+    console.debug("GET all projects response", allProjects);
     return allProjects.data.data;
   } catch (error) {
     console.warn("Error Fetching Projects");
@@ -16,7 +16,7 @@ export const getAllProjects = async () => {
 };
 
 export const loginApi = async ({ loginId, password }) => {
-  console.log("Login api call");
+  console.debug("Login api call");
   try {
     let loginRes = await axios.post(`${baseUrl}/api/v1/portfolio/login`, {
       userName: loginId,
@@ -50,7 +50,7 @@ export const loginApi = async ({ loginId, password }) => {
   }
 };
 export const createProject = async (projectInfo) => {
-  console.log("Create Project api::", projectInfo);
+  console.debug("Create Project api::", projectInfo);
   let data = new FormData();
   const {
     name,
@@ -70,7 +70,7 @@ export const createProject = async (projectInfo) => {
   data.append("demo", demo);
   data.append("code", code);
   data.append("file", file);
-  console.log("Auth token::", localStorage.getItem("authToken"));
+  console.debug("Auth token::", localStorage.getItem("authToken"));
 
   let createProjectConfig = {
     method: "post",
@@ -83,7 +83,10 @@ export const createProject = async (projectInfo) => {
 
   try {
     let createProjectResponse = await axios(createProjectConfig);
-    console.log("create project success::", createProjectResponse.data.message);
+    console.debug(
+      "create project success::",
+      createProjectResponse.data.message
+    );
     if (
       !createProjectResponse.data.error !== undefined &&
       !createProjectResponse.data.error
@@ -101,7 +104,7 @@ export const createProject = async (projectInfo) => {
   }
 };
 export const updateProject = async (projectInfo) => {
-  console.log("update Project api::", projectInfo);
+  console.debug("update Project api::", projectInfo);
   let data = new FormData();
   const {
     name,
@@ -124,7 +127,7 @@ export const updateProject = async (projectInfo) => {
   data.append("code", code);
   data.append("file", file);
 
-  console.log("Auth token::", localStorage.getItem("authToken"));
+  console.debug("Auth token::", localStorage.getItem("authToken"));
   let updateProjectConfig = {
     method: "post",
     url: `${baseUrl}/api/v1/portfolio/updateProject?userId=${userId}&projectId=${projectId}&fileChg=${fileChg}`,
@@ -136,7 +139,10 @@ export const updateProject = async (projectInfo) => {
 
   try {
     let updateProjectResponse = await axios(updateProjectConfig);
-    console.log("update project success::", updateProjectResponse.data.message);
+    console.debug(
+      "update project success::",
+      updateProjectResponse.data.message
+    );
     if (
       !updateProjectResponse.data.error !== undefined &&
       !updateProjectResponse.data.error
@@ -154,7 +160,7 @@ export const updateProject = async (projectInfo) => {
   }
 };
 export const deleteProject = async (projectInfo) => {
-  console.log("delete Project api", projectInfo);
+  console.debug("delete Project api", projectInfo);
   const { projectId, userId } = projectInfo;
   let deleteProjectConfig = {
     method: "delete",
@@ -166,7 +172,10 @@ export const deleteProject = async (projectInfo) => {
 
   try {
     let deleteProjectResponse = await axios(deleteProjectConfig);
-    console.log("delete project success::", deleteProjectResponse.data.message);
+    console.debug(
+      "delete project success::",
+      deleteProjectResponse.data.message
+    );
     if (!deleteProjectResponse.data.error) {
       toast.success(deleteProjectResponse.data.message);
     }
@@ -179,17 +188,17 @@ export const deleteProject = async (projectInfo) => {
 };
 /*****************BLOG APIS******************** */
 export const getAllBlogs = async () => {
-  console.log("calling api");
+  console.debug("calling api");
   try {
     let allBlogs = await axios.get(`${baseUrl}/api/v1/portfolio/blogs`);
-    console.log("GET all blogs response", allBlogs);
+    console.debug("GET all blogs response", allBlogs);
     return allBlogs.data.data;
   } catch (error) {
     console.warn("Error Fetching allBlogs");
   }
 };
 export const createBlog = async (blogInfo) => {
-  console.log("Create blog api::", blogInfo);
+  console.debug("Create blog api::", blogInfo);
   let data = new FormData();
   const { title, description, type, link, created, file, userId } = blogInfo;
   data.append("userId", userId);
@@ -199,7 +208,7 @@ export const createBlog = async (blogInfo) => {
   data.append("link", link);
   data.append("created", created);
   data.append("file", file);
-  console.log("Auth token::", localStorage.getItem("authToken"));
+  console.debug("Auth token::", localStorage.getItem("authToken"));
 
   let createBlogConfig = {
     method: "post",
@@ -213,17 +222,17 @@ export const createBlog = async (blogInfo) => {
   try {
     let createBlogResponse = await axios(createBlogConfig);
 
-    console.log("create blog success::", createBlogResponse.data.message);
-    console.log("condn check::", createBlogResponse.data.error);
+    console.debug("create blog success::", createBlogResponse.data.message);
+    console.debug("condn check::", createBlogResponse.data.error);
     if (
       createBlogResponse.data.error !== undefined &&
       !createBlogResponse.data.error
     ) {
-      console.log("success condn");
+      console.debug("success condn");
       toast.success(createBlogResponse.data.message);
       return createBlogResponse.data.data;
     } else {
-      console.log("error");
+      console.debug("error");
       toast.error(createBlogResponse.data.message);
       return {};
     }
@@ -234,7 +243,7 @@ export const createBlog = async (blogInfo) => {
   }
 };
 export const updateBlog = async (blogInfo) => {
-  console.log("update Blog api::", blogInfo);
+  console.debug("update Blog api::", blogInfo);
   let data = new FormData();
   const {
     title,
@@ -255,7 +264,7 @@ export const updateBlog = async (blogInfo) => {
   data.append("created", created);
   data.append("file", file);
 
-  console.log("Auth token::", localStorage.getItem("authToken"));
+  console.debug("Auth token::", localStorage.getItem("authToken"));
   let updateBlogConfig = {
     method: "post",
     url: `${baseUrl}/api/v1/portfolio/updateBlog?userId=${userId}&blogId=${blogId}&fileChg=${fileChg}`,
@@ -267,7 +276,7 @@ export const updateBlog = async (blogInfo) => {
 
   try {
     let updateBlogResponse = await axios(updateBlogConfig);
-    console.log("update blog success::", updateBlogResponse.data.message);
+    console.debug("update blog success::", updateBlogResponse.data.message);
     if (
       updateBlogResponse.data.error !== undefined &&
       !updateBlogResponse.data.error
@@ -285,7 +294,7 @@ export const updateBlog = async (blogInfo) => {
   }
 };
 export const deleteBlog = async (blogInfo) => {
-  console.log("delete Project api", blogInfo);
+  console.debug("delete Project api", blogInfo);
   const { blogId, userId } = blogInfo;
   let deleteBlogConfig = {
     method: "delete",
@@ -297,7 +306,7 @@ export const deleteBlog = async (blogInfo) => {
 
   try {
     let deleteBlogResponse = await axios(deleteBlogConfig);
-    console.log("delete blog success::", deleteBlogResponse.data.message);
+    console.debug("delete blog success::", deleteBlogResponse.data.message);
     if (!deleteBlogResponse.data.error) {
       toast.success(deleteBlogResponse.data.message);
     }
@@ -309,12 +318,12 @@ export const deleteBlog = async (blogInfo) => {
   }
 };
 export const sendMessage = async (name, email, message) => {
-  console.log("calling api send message");
+  console.debug("calling api send message");
   try {
     let res = await axios.post(
       `${baseUrl}/api/v1/portfolio/message?name=${name}&email=${email}&message=${message}`
     );
-    console.log("send message response", res);
+    console.debug("send message response", res);
     if (!res.data.error) {
       toast.success(res.data.message);
       return true;

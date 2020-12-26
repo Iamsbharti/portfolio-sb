@@ -93,7 +93,7 @@ const Login = ({ error, message, adminLoginAction }) => {
   );
 };
 const mapStateToProps = (state) => {
-  console.log("Login State:", state.user);
+  console.debug("Login State:", state.user);
   const { error, message } = state.user;
   return { error, message };
 };

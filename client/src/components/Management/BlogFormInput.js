@@ -43,7 +43,7 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
   const diaLogClasses = useStyles();
   const formClasses = styles();
   const [openValue, setOpenValue] = useState(open);
-  console.log("Blog EDIT", blogToEdit);
+  console.debug("Blog EDIT", blogToEdit);
   const handleClose = () => {
     setOpenValue(false);
     onCloseDialog(false);
@@ -55,7 +55,7 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
   const [created, setCreated] = useState(mode ? blogToEdit.created : "");
   const [file, setFile] = useState();
   const handleBlog = () => {
-    console.log("Save Blog FormInput");
+    console.debug("Save Blog FormInput");
     let blogInfo = {
       title: title,
       link: link,
@@ -71,7 +71,7 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
   };
   // handle delete chip component
   const handleUpdateChipComponent = (updatedChips, type) => {
-    console.log("handle update chip Form Input::", updatedChips, type);
+    console.debug("handle update chip Form Input::", updatedChips, type);
     setType(updatedChips);
   };
   return (

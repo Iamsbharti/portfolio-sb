@@ -49,7 +49,7 @@ const ProjectFormInput = ({
   const diaLogClasses = useStyles();
   const formClasses = styles();
   const [openValue, setOpenValue] = useState(open);
-  console.log("PROJECT EDIT", projectToEdit);
+  console.debug("PROJECT EDIT", projectToEdit);
   const handleClose = () => {
     setOpenValue(false);
     onCloseDialog(false);
@@ -68,7 +68,7 @@ const ProjectFormInput = ({
   const [code, setCode] = useState(mode ? projectToEdit.code : "");
   const [file, setFile] = useState();
   const handleProject = () => {
-    console.log("Save project FormINput");
+    console.debug("Save project FormINput");
     let projectInfo = {
       name: name,
       description: description,
@@ -85,11 +85,11 @@ const ProjectFormInput = ({
   };
   // handle delete chip component
   const handleUpdateChipComponent = (updatedChips, type) => {
-    console.log("handle update chip Form Input::", updatedChips, type);
+    console.debug("handle update chip Form Input::", updatedChips, type);
     switch (type) {
       case "Techstack":
         setTechStack(updatedChips);
-        console.log("updated tech stack array::", techstack);
+        console.debug("updated tech stack array::", techstack);
         break;
       case "ProjectType":
         setType(updatedChips);

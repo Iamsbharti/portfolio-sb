@@ -35,7 +35,7 @@ const ManageProjects = ({
   const color = HUE[50];
 
   useEffect(() => {
-    console.log("get all projects");
+    console.debug("get all projects");
     getAllProjectAction();
   }, [getAllProjectAction]);
 
@@ -43,7 +43,7 @@ const ManageProjects = ({
   const [value, setValue] = useState(false);
   //open the dialog box
   const handleClick = () => {
-    console.log("open dialog box");
+    console.debug("open dialog box");
     setValue(true);
   };
   //reset the value after dialog is closed
@@ -61,18 +61,18 @@ const ManageProjects = ({
   //handle save project
   const handleSaveProject = (mode, projectInfo) => {
     // based on mode call update or create project action
-    console.log("Saving project ManageProject", mode, projectInfo);
+    console.debug("Saving project ManageProject", mode, projectInfo);
     if (mode) {
-      console.log("edit /update project");
+      console.debug("edit /update project");
       let updateProjectinfo = {
         ...projectInfo,
         projectId: projectToEdit.projectId,
       };
-      console.log("Project info for Update::", updateProjectinfo);
+      console.debug("Project info for Update::", updateProjectinfo);
       updateProjectAction(updateProjectinfo);
       setValue(!value);
     } else {
-      console.log("create new project");
+      console.debug("create new project");
       createProjectAction(projectInfo);
       setValue(!value);
     }
