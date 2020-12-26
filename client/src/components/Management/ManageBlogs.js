@@ -19,7 +19,7 @@ import {
   deleteBlogAction,
 } from "../../redux/actions/blogAction";
 import BlogFormInput from "./BlogFormInput";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 const ManageBlogs = ({
