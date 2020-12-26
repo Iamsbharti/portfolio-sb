@@ -34,7 +34,7 @@ const Projects = ({ projects, getAllProjectAction }) => {
   }));
   const classes = useStyles();
   const handleExpandIcon = (projectId) => {
-    //console.log("handle expand", projectId);
+    //console.debug("handle expand", projectId);
     // change global state
     // eslint-disable-next-line
     setStateProjects(
@@ -64,7 +64,7 @@ const Projects = ({ projects, getAllProjectAction }) => {
 
   /**Filter projects */
   const handleFilterProjects = (filter) => {
-    //console.log("Filter projects", filter);
+    //console.debug("Filter projects", filter);
     // set view category
     setShowCategory(filter);
 
@@ -244,7 +244,7 @@ const mapStateToProps = (state) => {
     return _projects.push(project);
   });
 
-  //console.log("updated project:", _projects);
+  //console.debug("updated project:", _projects);
 
   return { projects: _projects };
 };

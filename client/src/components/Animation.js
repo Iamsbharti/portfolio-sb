@@ -31,7 +31,7 @@ export const iconIntro = (ele) => {
   });
 };
 export const iconIntroMob = (ele) => {
-  console.log("icon ani");
+  console.debug("icon ani");
   gsap.fromTo(
     ele,
     {
@@ -455,7 +455,7 @@ export const animateProjectIntroMobile = (trigger, element) => {
   );
 };
 export const animateDivOnScrollIntro = (trigger, element, direction) => {
-  console.log("widget animation");
+  console.debug("widget animation");
   let axis;
   axis = direction === "right" ? 50 : -40;
   gsap.registerPlugin(ScrollTrigger);

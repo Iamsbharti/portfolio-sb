@@ -35,7 +35,7 @@ const NavBar = () => {
     iconIntroMob(navIconMob);
   }, []);
   const handleToggleMenu = () => {
-    console.log("toggle menu");
+    console.debug("toggle menu");
     toggleMenubar(!hideMenuBar);
   };
   return (
