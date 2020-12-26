@@ -8,7 +8,7 @@ const logger = require("./library/logger");
 const db = require("./initdb");
 const { formatResponse } = require("./library/formatResponse");
 const path = require("path");
-let port = process.env.PORT || 3001;
+let port = process.env.API_PORT || 3001;
 const router = require("./router/router");
 /**config env */
 dotenv.config();
