@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-api": "nodemon server/app",
-    "start": "pm2 start server/app.js"
+    "start": "pm2 start server/app.js",
+    "server-init": "npm install",
+    "client-init": "cd client && yarn install",
+    "start-api-server": "npm run start",
+    "start-client-server": "cd client && npm run client-start",
+    "init": "npm run server-init && npm run client-init && npm run start-api-server && npm run start-client-server"
   },
   "repository": {
     "type": "git",

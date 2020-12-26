@@ -30,13 +30,7 @@ app.use(function (req, res, next) {
   );
   next();
 });
-// Priority serve any static files.
-app.use(express.static(path.resolve(__dirname, "../client/build")));
-
-// All remaining requests return the React app, so it can handle routing.
-app.get("*", function (request, response) {
-  response.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
-});
+app.use(express.static(path.join(__dirname, "public")));
 app.get("/api", (req, res) => {
   res.status(200).send("Welcome to port`de - API");
 });
