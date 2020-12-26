@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f813f58.chunk.css",
+    "main.js": "/static/js/main.7d187db1.chunk.js",
+    "main.js.map": "/static/js/main.7d187db1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.df18c921.js",
+    "runtime-main.js.map": "/static/js/runtime-main.df18c921.js.map",
+    "static/css/2.8047eb6e.chunk.css": "/static/css/2.8047eb6e.chunk.css",
+    "static/js/2.b4b3d230.chunk.js": "/static/js/2.b4b3d230.chunk.js",
+    "static/js/2.b4b3d230.chunk.js.map": "/static/js/2.b4b3d230.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.8047eb6e.chunk.css.map": "/static/css/2.8047eb6e.chunk.css.map",
+    "static/css/main.9f813f58.chunk.css.map": "/static/css/main.9f813f58.chunk.css.map",
+    "static/js/2.b4b3d230.chunk.js.LICENSE.txt": "/static/js/2.b4b3d230.chunk.js.LICENSE.txt",
+    "static/media/NavBar.css": "/static/media/pexels-octoptimist-4904342.9d63903f.jpg",
+    "static/media/Slider.css": "/static/media/pexels-philippe-donn-1169754.3e7b6b1d.jpg",
+    "static/media/Login.css": "/static/media/pexels-sohail-na-807598.3eda9b6f.jpg",
+    "static/media/styles.css": "/static/media/revicons.e8746a62.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df18c921.js",
+    "static/css/2.8047eb6e.chunk.css",
+    "static/js/2.b4b3d230.chunk.js",
+    "static/css/main.9f813f58.chunk.css",
+    "static/js/main.7d187db1.chunk.js"
+  ]
+}
