@@ -4,13 +4,15 @@ const nodemailer = require("nodemailer");
 const sendMessageMail = async (req, res) => {
   const { email, name, message } = req.query;
   //construct transport
+  console.log("Email creds:", process.env.EMAIL);
   let transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: "Yahoo",
+    secure: true,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD,
     },
-    tls: { rejectUnauthorized: false },
+    //tls: { rejectUnauthorized: false },
   });
   //configure mail options
   let emailText = `
@@ -20,7 +22,7 @@ const sendMessageMail = async (req, res) => {
     `;
 
   let mailOptions = {
-    from: "kanbanboard.test@gmail.com",
+    from: "portfolio.saurabh@yahoo.com",
     to: "saurabhbharti9@gmail.com",
     subject: "Portfolio Message",
     html: emailText,

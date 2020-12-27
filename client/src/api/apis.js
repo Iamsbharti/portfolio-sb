@@ -1,7 +1,7 @@
 import axios from "axios";
 import FormData from "form-data";
 import { toast } from "react-toastify";
-export const baseUrl = "https://api.iamsb.tech";
+export const baseUrl = "http://localhost:4200";
 
 export const getAllProjects = async () => {
   console.debug("calling api");
