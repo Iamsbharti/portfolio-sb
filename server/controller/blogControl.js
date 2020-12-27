@@ -27,7 +27,6 @@ const createBlog = async (req, res) => {
     },
   };
 
-  console.log("updateoptions:", updateOptions);
   let updatedBlog = await Blog.updateOne({ blogId: blogId }, updateOptions);
   const { n } = updatedBlog;
   let createdBlog = await Blog.findOne({
@@ -91,8 +90,6 @@ const updateBlog = async (req, res) => {
   logger.info("Update Blog control");
   const { title, link, description, type, userId, created } = req.body;
   const { blogId, fileChg } = req.query;
-  console.log("BODY::", req.body);
-  console.log("QUERY::", req.query);
 
   let updateOptions = {};
   let existingBlog = await Blog.findOne({

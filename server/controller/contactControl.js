@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const sendMessageMail = async (req, res) => {
   const { email, name, message } = req.query;
   //construct transport
-  console.log("Email creds:", process.env.EMAIL);
+
   let transporter = nodemailer.createTransport({
     service: "Yahoo",
     secure: true,

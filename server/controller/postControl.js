@@ -7,7 +7,6 @@ const { deleteFile } = require("../initdb");
 const createPost = async (req, res) => {
   const { name, demo, code, type, description, userId, techstack } = req.body;
   logger.info("Create Post Control");
-  console.log(type, techstack);
   let newProject = new Project({
     projectId: shortid.generate(),
     name: name,
@@ -29,7 +28,6 @@ const createPost = async (req, res) => {
     },
   };
 
-  console.log("updateoptions:", updateOptions);
   let updatedProject = await Project.updateOne(
     { projectId: projectId },
     updateOptions
@@ -65,7 +63,6 @@ const getProjects = async (req, res) => {
     });
 };
 const filterNewItem = (existingArray, newArray) => {
-  console.log("Filter new item::", existingArray, newArray);
   let retVal = [];
   newArray.map((content) => {
     if (!existingArray.includes(content)) {
@@ -73,15 +70,12 @@ const filterNewItem = (existingArray, newArray) => {
       retVal.push(content);
     }
   });
-  console.log("new items array::", retVal);
   return retVal;
 };
 const updateProject = async (req, res) => {
   logger.info("Update project control");
   const { name, demo, code, type, description, userId, techstack } = req.body;
   const { projectId, fileChg } = req.query;
-  console.log("BODY::", req.body);
-  console.log("QUERY::", req.query);
 
   let updateOptions = {};
   let existingProject = await Project.findOne({
