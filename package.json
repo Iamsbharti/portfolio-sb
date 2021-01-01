@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-api": "nodemon server/app",
-    "start": "pm2 start server/app.js",
-    "server-init": "npm install",
-    "client-init": "cd client && yarn install",
-    "start-api-server": "npm run start",
-    "start-client-server": "cd client && npm run client-start",
-    "init": "npm run server-init && npm run client-init && npm run start-api-server && npm run start-client-server"
+    "start-api": "nodemon server/portfolioApp",
+    "start": "pm2 start server/portfolioApp.js",
+    "init-client": "cd client && yarn install && npm run build",
+    "init-server": "npm install && npm run start",
+    "move-build": "cd client && cp -r build/* /var/www/iamsb.tech/html",
+    "nginx": "sudo service nginx restart",
+    "deploy": "npm run init-client && npm run init-server && npm run move-build && npm run nginx"
   },
   "repository": {
     "type": "git",
