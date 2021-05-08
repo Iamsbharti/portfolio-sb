@@ -97,7 +97,7 @@ export const createProject = async (projectInfo) => {
       return {};
     }
   } catch (error) {
-    console.warn("Create Project Error::", error.response.data);
+    console.warn("Create Project Error::", error);
     toast.error(error.response.data.message);
     return error.response.data;
   }

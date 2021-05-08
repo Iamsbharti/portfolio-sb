@@ -5,6 +5,7 @@ body {
 
 .main {
   padding: 20px;
+  max-width: 100%;
 }
 .sidebar {
   width: 60px;
@@ -70,5 +71,10 @@ body {
   }
   .contact {
     margin: 0px;
+  }
+}
+@media (max-width: 360px) {
+  .main {
+    max-width: 100%;
   }
 }

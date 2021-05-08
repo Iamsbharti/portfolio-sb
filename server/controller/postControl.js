@@ -6,7 +6,7 @@ const { deleteFile } = require("../initdb");
 
 const createPost = async (req, res) => {
   const { name, demo, code, type, description, userId, techstack } = req.body;
-  logger.info("Create Post Control");
+  logger.log("Create Post Control");
   let newProject = new Project({
     projectId: shortid.generate(),
     name: name,
@@ -66,7 +66,7 @@ const filterNewItem = (existingArray, newArray) => {
   let retVal = [];
   newArray.map((content) => {
     if (!existingArray.includes(content)) {
-      console.log(content, "is new item");
+      console.debug(content, "is new item");
       retVal.push(content);
     }
   });
