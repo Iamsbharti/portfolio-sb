@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-api": "nodemon server/portfolioApp",
+    "start-dev": "npm run start && cd client && npm run start",
     "start": "pm2 start server/portfolioApp.js",
     "init-client": "cd client && yarn install && npm run build",
-    "init-server": "npm install && npm run start",
+    "init-server": "npm install && pm2 stop portfolioApp && npm run start",
     "move-build": "cd client && cp -r build/* /var/www/iamsb.tech/html",
     "nginx": "sudo service nginx restart",
     "deploy": "npm run init-client && npm run init-server && npm run move-build && npm run nginx"

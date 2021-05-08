@@ -64,7 +64,7 @@ const Projects = ({ projects, getAllProjectAction }) => {
 
   /**Filter projects */
   const handleFilterProjects = (filter) => {
-    //console.debug("Filter projects", filter);
+    console.debug("Filter projects", filter);
     // set view category
     setShowCategory(filter);
 
@@ -83,13 +83,14 @@ const Projects = ({ projects, getAllProjectAction }) => {
         ? projects
         : projects.filter(
             (project) =>
-              project.techstack.includes(filter.toLowerCase()) ||
-              project.type.includes(filter.toLowerCase())
+              project.techstack.includes(filter) ||
+              project.type.includes(filter)
           );
     // show/hide project not found div
     setNotFound(sortedProjects.length === 0 ? false : true);
 
     // set global state
+    console.debug(sortedProjects);
     setStateProjects(sortedProjects);
   };
   return (

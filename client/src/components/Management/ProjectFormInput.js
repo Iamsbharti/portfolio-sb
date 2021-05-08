@@ -68,7 +68,7 @@ const ProjectFormInput = ({
   const [code, setCode] = useState(mode ? projectToEdit.code : "");
   const [file, setFile] = useState();
   const handleProject = () => {
-    console.debug("Save project FormINput");
+    console.log("Save project FormINput");
     let projectInfo = {
       name: name,
       description: description,
