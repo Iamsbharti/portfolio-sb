@@ -112,7 +112,7 @@ const Project = ({ getAllProjectAction, projects }) => {
               <div className="project__golive">
                 <p>
                   <a
-                    href={projects[0].code}
+                    href={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -126,7 +126,7 @@ const Project = ({ getAllProjectAction, projects }) => {
                 </p>
                 <p>
                   <a
-                    href={projects[0].demo}
+                    href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
